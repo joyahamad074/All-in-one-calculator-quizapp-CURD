@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".quizmain"
+    android:background="#232A35">
+
+    <TextView
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:text="QUIZBEE"
+        android:textSize="60sp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:layout_marginBottom="100dp"/>
+
+   <EditText
+       android:id="@+id/etname"
+       android:layout_width="300dp"
+       android:layout_height="80dp"
+       android:hint="Enter Your Name"
+       android:textSize="30sp"
+       android:background="@drawable/ettext_corners"
+       android:inputType="textPersonName"
+       android:layout_marginBottom="30dp"/>
+    <Button
+        android:id="@+id/stquizbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START QUIZ"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:background="@drawable/round_btn"
+        android:onClick="stquiz"/>
+
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".saveinfo"
+    android:layout_weight="1"
+    android:background="#232A35">
+
+
+    <TextView
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="333dp"
+        android:layout_marginBottom="585dp"
+        android:text="ID"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etid"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:hint="Enter Your ID"
+        android:textColorHint="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="581dp"
+        android:background="@drawable/ettext_corners" />
+
+    <TextView
+        android:layout_width="53dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="342dp"
+        android:layout_marginBottom="523dp"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="523dp"
+        android:background="@drawable/ettext_corners"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="335dp"
+        android:layout_marginBottom="474dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="466dp"
+        android:background="@drawable/ettext_corners"
+        android:hint="Enter Your Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="344dp"
+        android:layout_marginBottom="417dp"
+        android:text="Phone"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="411dp"
+        android:background="@drawable/ettext_corners"
+        android:hint="Enter Your Phone No."
+        android:inputType="phone"
+        android:textColorHint="@color/white" />
+
+    <TextView
+        android:layout_width="66dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="333dp"
+        android:layout_marginBottom="350dp"
+        android:text="Gender"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/sp1gender"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="349dp"
+        android:background="#77FFFFFF"></Spinner>
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="282dp"
+        android:background="@drawable/round_btn"
+        android:onClick="savebtn"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/viewbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="282dp"
+        android:background="@drawable/round_btn"
+        android:onClick="viewbtn"
+        android:text="View"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etsearch"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:hint="Search by ID"
+            android:textColorHint="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="9dp"
+            android:background="@drawable/ettext_corners"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/searchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="9dp"
+            android:background="@drawable/round_btn"
+            android:text="search"
+            android:onClick="searchbtn"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etdelete"
+            android:textSize="20sp"
+            android:hint="Delete by ID"
+            android:textColorHint="@color/white"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="9dp"
+            android:background="@drawable/ettext_corners" />
+
+        <Button
+            android:id="@+id/deletebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delete"
+            android:onClick="deletebtn"
+            android:layout_marginEnd="9dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_btn"
+            android:layout_marginBottom="30dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
